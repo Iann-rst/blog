@@ -9,7 +9,7 @@ export function PostDetails({ title, author, content }: Props) {
   return (
     <>
       <header className="flex flex-col text-center">
-        <h2 title="Titulo da publicação" className="text-[#e1e1e1] font-bold text-4xl md:text-7xl">
+        <h2 title="Titulo da publicação" className="text-[#e1e5ee] font-bold text-4xl md:text-7xl">
           {title}
         </h2>
 
@@ -17,7 +17,7 @@ export function PostDetails({ title, author, content }: Props) {
           <em>{author}</em>
         </span>
       </header>
-      <p className="text-[#e1e1e1] text-center text-base md:text-xl mb-2">
+      <p className="text-[#e1e5ee] text-center text-base md:text-xl mb-2">
         {content}
       </p>
     </>
