@@ -24,7 +24,7 @@ export function Home() {
   const navigate = useNavigate();
 
 
-  /* renderiza para a tela de post (Detalhes do post, usuário e comentários) */
+  /* renderiza para a tela de post (Detalhes do post, autor e comentários) */
   function handlePostDetails(id: string) {
     navigate(`/posts/${id}`);
   }
@@ -32,7 +32,7 @@ export function Home() {
   async function handleFetchData() {
     try {
       setIsLoading(true);
-      console.log(page)
+
       setPage(prevState => prevState + 1);
       const response = await api.get(`/posts?_page=${page}`)
 
@@ -61,13 +61,6 @@ export function Home() {
     }
 
     fetchPosts()
-
-    /*setPosts([{
-      body: 'aaa',
-      id: '1',
-      title: 'bbb',
-      userId: '2'
-    }])*/
   }, [])
 
 
