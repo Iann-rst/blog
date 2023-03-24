@@ -74,7 +74,7 @@ export function Home() {
 
   return (
     <>
-      <Header title="Front-end para uma API RESTFul" />
+      <Header title="Home" />
       <main className='max-w-6xl m-auto h-auto grid grid-cols-1 lg:grid-cols-wrapper my-8 px-8 gap-4 items-start'>
         <Sidebar />
         <div className='flex flex-col items-center'>
