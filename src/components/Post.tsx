@@ -9,18 +9,18 @@ export function Post({ title, body, postsDetails }: PostProps) {
 
   return (
     <div
-      className="group w-full max-w-full bg-[#202024] text-white rounded-lg mb-8 hover:cursor-pointer hover:shadow-md hover:shadow-[#3c3c42] transition-colors"
+      className="group w-full max-w-full bg-[#202024] text-primary rounded-lg mb-8 hover:cursor-pointer hover:shadow-md hover:shadow-[#3c3c42] transition-colors"
     >
       <button
         onClick={postsDetails}
-        className='w-full p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00B37E] focus:ring-offset-4 focus:ring-offset-[#121214]'
+        className='w-full border border-[#24ac83] p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 focus:ring-offset-background'
       >
         <div className='flex flex-col'>
-          <strong className='text-[#e1e5ee] text-lg text-center md:text-start normal-case group-hover:text-[#00B37E] transition-colors ease-in duration-[0.3s]'>
+          <strong className='text-lg text-center md:text-start normal-case group-hover:text-secondary transition-colors ease-in duration-[0.3s]'>
             {title}
           </strong>
 
-          <p className='mt-4 text-[#8d8d8d] text-justify group-hover:text-[#00B37E] transition-colors ease-in duration-[0.3s]'>
+          <p className='mt-4 text-justify group-hover:text-secondary transition-colors ease-in duration-[0.3s]'>
             {body}
           </p>
         </div>

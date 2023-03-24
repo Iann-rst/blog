@@ -96,7 +96,7 @@ export function Home() {
           {/* Botão para carregar mais posts */}
           {
             !!!endOfPostList && (
-              <button className="group p-2 rounded-md border-[1px] border-[#00b37e] hover:border-[#00875f] hover:cursor-pointer disabled:cursor-wait disabled:border-none focus:outline-none focus:ring-2 focus:ring-[#00B37E]"
+              <button className="group p-2 rounded-md border-[1px] border-[#24ac83] hover:border-secondary hover:cursor-pointer disabled:cursor-wait disabled:border-none focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 focus:ring-offset-background"
                 onClick={handleFetchData}
                 disabled={isLoading}
               >
@@ -105,7 +105,7 @@ export function Home() {
                     <Loading />
                     :
                     <strong
-                      className="text-[#00B37E] group-hover:text-[#00875F]"
+                      className="text-[#24ac83] group-hover:text-secondary"
                     >
                       Carregar mais posts
                     </strong>

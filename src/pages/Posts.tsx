@@ -91,7 +91,7 @@ export function Posts() {
             author={author.name}
             content={post.body}
           />
-          <strong className="text-white md:text-xl text-center md:text-start mt-10">Comentários</strong>
+          <strong className="text-primary md:text-xl text-center md:text-start mt-10">Comentários</strong>
           {comments.map(comment => (
             <Comment
               key={comment.id}
