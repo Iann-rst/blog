@@ -40,17 +40,20 @@ export function Posts() {
     try {
       setIsLoading(true);
 
-      const response = await api.get(`/posts/${id}`);
-      const post: Post = response.data;
+      const [postResponse, commentsResponse] = await Promise.all([
+        api.get(`/posts/${id}`),
+        api.get(`/posts/${id}/comments`)
+      ])
+
+      const post: Post = postResponse.data;
       setPost(post)
+
+      const comments: Comment[] = commentsResponse.data;
+      setComments(comments);
 
       const userResponse = await api.get(`/users/${post.userId}`)
       const user: Author = userResponse.data
       setAuthor(user);
-
-      const commentsResponse = await api.get(`/posts/${id}/comments`);
-      const comments: Comment[] = commentsResponse.data;
-      setComments(comments);
 
     } catch (error) {
       if (error instanceof Error) {
