@@ -86,7 +86,7 @@ export function Posts() {
   return (
     <>
       <Header title="Publicação" />
-      <main className="max-w-[1124px] w-full h-full mx-auto mt-8 px-8 mb-10">
+      <main className="max-w-[1124px] min-w-[300px] w-full h-full mx-auto mt-8 px-8 mb-10">
         <BackButton back={handleGoBackHome} />
         <article className="flex flex-col gap-6 bg-[#202024] p-4 rounded-lg">
           <PostDetails
@@ -94,7 +94,9 @@ export function Posts() {
             author={author.name}
             content={post.body}
           />
-          <strong className="text-primary md:text-xl text-center md:text-start mt-10">Comentários</strong>
+          <strong className="text-primary md:text-xl text-center md:text-start mt-10">
+            Comentários
+          </strong>
           {comments.map(comment => (
             <Comment
               key={comment.id}
