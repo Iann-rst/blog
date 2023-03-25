@@ -23,7 +23,7 @@ Desenvolver um front-end para uma API RESTful. A interface deve exibir os posts 
     - Busca na API as informações do autor e os comentários do post:
       ```js 
         comentários: api.get(`/posts/${id}/comments`)
-        autor: api.get(`/users/${post.id}`)
+        autor: api.get(`/users/${post.userId}`)
       ```
     - Depois que recebe as informações, faz a listagem do: título, conteúdo, autor e comentários do post;
   - A página 404 é para rotas não listadas no site;
