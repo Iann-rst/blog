@@ -1,4 +1,4 @@
-import { ArrowLeft } from '@phosphor-icons/react'
+import { HouseLine } from '@phosphor-icons/react'
 import Lottie from 'lottie-react'
 import { Link } from 'react-router-dom'
 
@@ -14,7 +14,7 @@ export function NotFound() {
       <Link to="/"
         className='flex items-center gap-2 p-4 text-white border border-secondary rounded-3xl hover:bg-secondary hover:text-background transition-colors ease-in duration-[0.3s]'
       >
-        <ArrowLeft weight='bold' />
+        <HouseLine size={22} weight='bold' />
         <strong>Voltar para a página inicial</strong>
       </Link>
     </div >
