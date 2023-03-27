@@ -47,6 +47,19 @@ npm run dev
 
 ## :camera: Screenshots
 
-<div></div>
+<div align="center">
+  <h3 align="center">Página Home - Listagem dos posts</h3>
+  <img src=".github/assets/blog-home.png" >
+</div>
+
+<div align="center">
+  <h3 align="center">Página Publicação - Detalhes de um post específico</h3>
+  <img src=".github/assets/blog-publicacao.png" >
+</div>
+
+<div align="center">
+  <h3 align="center">Página Not found - Error de página não encontrada</h3>
+  <img src=".github/assets/blog-404.png" >
+</div>
 
 
