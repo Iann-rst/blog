@@ -13,9 +13,7 @@ Desenvolver um front-end para uma API RESTful. A interface deve exibir os posts 
 
 ## :book: Estratégia
 
-- 1º Poderia ter feito uma interface exibindo os posts e, ao clicar no post, exibir um Modal com as informações e comentários referente de cada post.
-
-- 2º Desenvolvi 3 páginas (Home, Posts e 404):
+- Desenvolvi 3 páginas (Home, Posts e 404):
   - A Home é a responsável por listar os posts:
     - Lista os 10 primeiros posts e depois posso ir listando mais ao clicar no botão de "Carregar mais posts";
   - A outra página (Posts) ela lista todas as informações do posts que o usuário clicou:
